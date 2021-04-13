@@ -5,7 +5,6 @@ import Img from 'gatsby-image';
 
 import { Container } from '@components/global';
 import ExternalLink from '@common/ExternalLink';
-
 import GithubIcon from '@static/icons/github.svg';
 import InstagramIcon from '@static/icons/instagram.svg';
 import TwitterIcon from '@static/icons/twitter.svg';

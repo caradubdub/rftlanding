@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import AnchorLink from 'react-anchor-link-smooth-scroll';
 import Scrollspy from 'react-scrollspy';
-
+import styled from 'styled-components';
 import { Container } from '@components/global';
 import {
   Nav,
@@ -14,8 +14,30 @@ import {
 } from './style';
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
+import GithubIcon from '@static/icons/github.svg';
+import InstagramIcon from '@static/icons/instagram.svg';
+import TwitterIcon from '@static/icons/twitter.svg';
+import ExternalLink from '@common/ExternalLink';
 
 const NAV_ITEMS = ['About', 'Team', 'FAQ'];
+
+const SOCIAL = [
+  {
+    icon: GithubIcon,
+    name: 'Star',
+    link: 'https://github.com/ajayns/gatsby-absurd',
+  },
+  // {
+  //   icon: InstagramIcon,
+  //   name: '',
+  //   link: 'https://instagram.com/ajay_ns',
+  // },
+  // {
+  //   icon: TwitterIcon,
+  //   name: '',
+  //   link: 'https://twitter.com/ajayns08',
+  // },
+];
 
 class Navbar extends Component {
   state = {
@@ -40,16 +62,56 @@ class Navbar extends Component {
 
   getNavList = ({ mobile = false }) => (
     <NavListWrapper mobile={mobile}>
-      <Scrollspy
-        items={NAV_ITEMS.map(item => item.toLowerCase())}
-        currentClassName="active"
-        mobile={mobile}
-        offset={-64}
-      >
-        {NAV_ITEMS.map(navItem => (
-          <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
-        ))}
-      </Scrollspy>
+      <StyledContainer>
+        <SocialIcons>
+          {SOCIAL.map(({ icon, link, name }) => (
+            <ExternalLink
+              style={{ textDecoration: 'none', color: 'black' }}
+              key={link}
+              href={link}
+            >
+              <div
+                style={{
+                  display: 'flex',
+                  flexDirection: 'row',
+                  flexWrap: 'nowrap',
+                  alignItems: 'flex-end',
+                  backgroundColor: '#7bc19c',
+                  borderRadius: '20px',
+                  padding: '12px 20px 8px 20px',
+                  ':hover': { backgroundColor: '#BCDBCA' },
+                }}
+              >
+                <img src={icon} alt="link" />
+                <p
+                  style={{
+                    textDecoration: 'none',
+                    textAlign: 'center',
+                    alignSelf: 'flex-end',
+                    fontFamily: `${props => props.theme.font.secondary}`,
+                    fontSize: '18px',
+                    lineHeight: '25px',
+                    margin: '-6px 0 0 0',
+                    color: 'black',
+                  }}
+                >
+                  {name}
+                </p>
+              </div>
+            </ExternalLink>
+          ))}
+        </SocialIcons>
+        <Scrollspy
+          items={NAV_ITEMS.map(item => item.toLowerCase())}
+          currentClassName="active"
+          mobile={mobile}
+          offset={-64}
+        >
+          {NAV_ITEMS.map(navItem => (
+            <NavItem key={navItem}>{this.getNavAnchorLink(navItem)}</NavItem>
+          ))}
+        </Scrollspy>
+      </StyledContainer>
     </NavListWrapper>
   );
 
@@ -79,5 +141,18 @@ class Navbar extends Component {
     );
   }
 }
+const SocialIcons = styled.div`
+  display: flex;
+
+  img {
+    margin: 0 8px;
+    width: 24px;
+    height: 24px;
+  }
+
+  @media (max-width: ${props => props.theme.screen.sm}) {
+    margin-top: 40px;
+  }
+`;
 
 export default Navbar;
