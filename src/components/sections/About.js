@@ -44,7 +44,7 @@ const About = () => (
       }
     `}
     render={data => (
-      <Section id="about">
+      <Section id="about" style={{ backgroundColor: '#7bc19c' }}>
         <Container>
           <Grid>
             <div>

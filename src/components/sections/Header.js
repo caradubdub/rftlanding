@@ -15,7 +15,7 @@ const Header = () => (
           name: { eq: "build" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 1400) {
+            fluid(maxWidth: 600) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -26,16 +26,16 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art>
+            <Art style={{ height: '700px' }}>
               <Img fluid={data.art_build.childImageSharp.fluid} />
             </Art>
             <Text>
               <h1>
-                Fast in
+                See where
                 <br />
-                every way
+                your data requests
                 <br />
-                that matters
+                are happening
               </h1>
               <br />
               <p>
