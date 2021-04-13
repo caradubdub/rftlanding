@@ -60,7 +60,7 @@ const UsedBy = () => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Used by biggest in tech</h1>
+            <h1>Features</h1>
             <LogoGrid>
               {LOGOS.map(({ logo, link }) => (
                 <ExternalLink key={link} href={link}>
@@ -69,9 +69,6 @@ const UsedBy = () => (
               ))}
             </LogoGrid>
           </div>
-          <Art>
-            <Img fluid={data.art_story.childImageSharp.fluid} />
-          </Art>
         </StyledContainer>
       </Section>
     )}
@@ -98,7 +95,7 @@ const LogoGrid = styled.div`
 
 const StyledContainer = styled(Container)`
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   position: relative;
 
   @media (max-width: ${props => props.theme.screen.md}) {

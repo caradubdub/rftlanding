@@ -27,11 +27,11 @@ const SOCIAL = [
     name: 'Star',
     link: 'https://github.com/ajayns/gatsby-absurd',
   },
-  // {
-  //   icon: InstagramIcon,
-  //   name: '',
-  //   link: 'https://instagram.com/ajay_ns',
-  // },
+  {
+    icon: InstagramIcon,
+    name: '',
+    link: 'https://instagram.com/ajay_ns',
+  },
   // {
   //   icon: TwitterIcon,
   //   name: '',
@@ -79,6 +79,7 @@ class Navbar extends Component {
                   backgroundColor: '#7bc19c',
                   borderRadius: '20px',
                   padding: '12px 20px 8px 20px',
+                  marginLeft: '5px',
                   ':hover': { backgroundColor: '#BCDBCA' },
                 }}
               >

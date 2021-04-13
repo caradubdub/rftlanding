@@ -23,9 +23,9 @@ const theme = {
     primary: '#white',
   },
   screen: {
-    xs: '575px',
-    sm: '767px',
-    md: '991px',
+    xs: '450px',
+    sm: '575px',
+    md: '734px',
     lg: '1199px',
   },
 };

@@ -9,6 +9,9 @@ export const Nav = styled.nav`
   width: 100%;
   top: 0;
   z-index: 1000;
+  &:active {
+    opacity: 0.5;
+  }
 `;
 
 export const StyledContainer = styled(Container)`

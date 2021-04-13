@@ -48,15 +48,16 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Be on par with the latest</h2>
+              <h2>Identify potential waterfalls and prevent them early</h2>
               <p>
-                Concurrent mode are a collection of new features in React that allow rendering 
-                to be interruptible instead of blocking. React's Suspense component would allow a user to 
-                declaratively wait for requested data
-                React Fetch Tree maps components in your app that are requesting data. Instead of
-                waiting to generate pages when requested, pre-build pages and
-                lift them into a global cloud of servers — ready to be delivered
-                instantly to your users wherever they are.
+                Concurrent mode are a collection of new features in React that
+                allow rendering to be interruptible instead of blocking. React's
+                Suspense component would allow a user to declaratively wait for
+                requested data React Fetch Tree maps components in your app that
+                are requesting data. Instead of waiting to generate pages when
+                requested, pre-build pages and lift them into a global cloud of
+                servers — ready to be delivered instantly to your users wherever
+                they are.
               </p>
             </div>
             <Art>
@@ -68,7 +69,7 @@ const About = () => (
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
             <div>
-              <h2>Nothing new to learn here</h2>
+              <h2>Visualize your React app structure</h2>
               <p>
                 Enjoy the power of the latest web technologies – React.js ,
                 Webpack , modern JavaScript and CSS and more — all set up and
@@ -78,7 +79,7 @@ const About = () => (
           </Grid>
           <Grid>
             <div>
-              <h2>Grow and build your ideas</h2>
+              <h2>Easily see where data requests are within your components</h2>
               <p>
                 Waste no more time on tooling and performance. Focus on the the
                 site you want to build and nothing more.

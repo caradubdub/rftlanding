@@ -4,33 +4,39 @@ import { StaticQuery, graphql } from 'gatsby';
 import Img from 'gatsby-image';
 
 import { Section, Container } from '@components/global';
+import ExternalLink from '@common/ExternalLink';
 
 const TEAM = [
   {
     name: 'Trevor Carr',
     image: 'trevor.jpeg',
     role: 'Software Engineer',
+    github: 'https://github.com/trevcarr95',
   },
   {
     name: 'Cara Dibdin',
     image: 'cara.jpeg',
     role: 'Software Engineer',
+    github: 'https://github.com/caradubdub',
   },
   {
     name: 'James Ferrell',
     image: 'james.jpeg',
     role: 'Software Engineer',
+    github: 'https://github.com/jdferrell009',
   },
   {
     name: 'Chris Lung',
     image: 'chris.jpeg',
     role: 'Software Engineer',
+    github: 'https://github.com/chrisl-13',
   },
   {
     name: 'Anika Mustafiz',
     image: 'anika.jpeg',
     role: 'Software Engineer',
-  }
+    github: 'https://github.com/amustafiz',
+  },
 ];
 
 const Team = () => (
@@ -76,16 +82,18 @@ const Team = () => (
         <Container style={{ position: 'relative' }}>
           <h1>The Team</h1>
           <TeamGrid>
-            {TEAM.map(({ name, image, role }) => {
+            {TEAM.map(({ name, image, role, github }) => {
               const img = data.allFile.edges.find(
                 ({ node }) => node.relativePath === image
               ).node;
 
               return (
                 <div key={name}>
-                  <Img fluid={img.childImageSharp.fluid} alt={name} />
-                  <Title>{name}</Title>
-                  <Subtitle>{role}</Subtitle>
+                  <ExternalLink key={github} href={github}>
+                    <Img fluid={img.childImageSharp.fluid} alt={name} />
+                    <Title>{name}</Title>
+                    <Subtitle>{role}</Subtitle>
+                  </ExternalLink>
                 </div>
               );
             })}
