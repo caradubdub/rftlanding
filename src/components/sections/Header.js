@@ -15,7 +15,7 @@ const Header = () => (
           name: { eq: "build" }
         ) {
           childImageSharp {
-            fluid(maxWidth: 600) {
+            fluid(maxHeight: 1400) {
               ...GatsbyImageSharpFluid_withWebp_tracedSVG
             }
           }
@@ -26,20 +26,24 @@ const Header = () => (
       <HeaderWrapper>
         <Container>
           <Grid>
-            <Art style={{ height: '700px' }}>
-              <Img fluid={data.art_build.childImageSharp.fluid} />
+            <Art>
+              <Img
+                style={{ margin: '1rem', maxHeight: 'calc(50vh)' }}
+                imgStyle={{ objectFit: 'contain' }}
+                fluid={data.art_build.childImageSharp.fluid}
+              />
             </Art>
             <Text>
               <h1>
-                See where
+                Let's develop
                 <br />
-                your data requests
+                a better
                 <br />
-                are happening
+                user experience
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                <StyledExternalLink href="https://github.com/oslabs-beta/react-fetch-tree">
                   Check out source &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>

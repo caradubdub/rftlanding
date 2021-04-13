@@ -48,9 +48,12 @@ const About = () => (
         <Container>
           <Grid>
             <div>
-              <h2>Speed past the competition</h2>
+              <h2>Be on par with the latest</h2>
               <p>
-                Gatsby.js builds the fastest possible website. Instead of
+                Concurrent mode are a collection of new features in React that allow rendering 
+                to be interruptible instead of blocking. React's Suspense component would allow a user to 
+                declaratively wait for requested data
+                React Fetch Tree maps components in your app that are requesting data. Instead of
                 waiting to generate pages when requested, pre-build pages and
                 lift them into a global cloud of servers — ready to be delivered
                 instantly to your users wherever they are.

@@ -59,6 +59,16 @@ const Team = () => (
             }
           }
         }
+        art_ideas: file(
+          sourceInstanceName: { eq: "art" }
+          name: { eq: "ideas" }
+        ) {
+          childImageSharp {
+            fluid(maxWidth: 1600) {
+              ...GatsbyImageSharpFluid_withWebp_tracedSVG
+            }
+          }
+        }
       }
     `}
     render={data => (
@@ -81,10 +91,10 @@ const Team = () => (
             })}
           </TeamGrid>
           <Art>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.art_ideas.childImageSharp.fluid} />
           </Art>
           <ArtMobile>
-            <Img fluid={data.art_team.childImageSharp.fluid} />
+            <Img fluid={data.art_ideas.childImageSharp.fluid} />
           </ArtMobile>
         </Container>
       </Section>
@@ -120,7 +130,7 @@ const Art = styled.figure`
   margin: -80px 0;
   position: absolute;
   top: 0;
-  left: 70%;
+  left: 60%;
 
   @media (max-width: ${props => props.theme.screen.lg}) {
     top: 20%;
