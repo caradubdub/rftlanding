@@ -31,15 +31,17 @@ const Header = () => (
             </Art>
             <Text>
               <h1>
-                See where
+                We are 
                 <br />
-                your data requests
+                helping you 
                 <br />
-                are happening
+                develop a better 
+                <br />
+                user experience
               </h1>
               <br />
               <p>
-                <StyledExternalLink href="https://github.com/ajayns/gatsby-absurd">
+                <StyledExternalLink href="https://github.com/oslabs-beta/react-fetch-tree">
                   Check out source &nbsp;&#x2794;
                 </StyledExternalLink>
               </p>
