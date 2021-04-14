@@ -16,7 +16,7 @@ import {
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import GithubIcon from '@static/icons/github.svg';
 import LinkedInIcon from '@static/icons/linkedin.svg';
-import TwitterIcon from '@static/icons/twitter.svg';
+
 import ExternalLink from '@common/ExternalLink';
 
 const NAV_ITEMS = ['About', 'Features', 'Team', 'FAQ'];
@@ -32,11 +32,7 @@ const SOCIAL = [
     name: 'Follow',
     link: 'https://linkedin.com',
   },
-  // {
-  //   icon: TwitterIcon,
-  //   name: '',
-  //   link: 'https://twitter.com/ajayns08',
-  // },
+
 ];
 
 class Navbar extends Component {
