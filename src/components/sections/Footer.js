@@ -51,7 +51,7 @@ const Footer = () => (
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <h2>Absurd</h2>
+              <div>Made with Gatsby using the Absurd design</div>
               <span>
                 Illustrations by
                 {` `}

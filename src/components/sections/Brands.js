@@ -15,28 +15,18 @@ import { ReactComponent as InstagramLogo } from '@images/logos/instagram.svg';
 
 const LOGOS = [
   {
-    logo: AirbnbLogo,
-    link: 'https://airbnb.io',
+    feature: 'Zoom and pan over the component tree visualization.',
   },
   {
-    logo: AppleMusicLogo,
-    link: 'https://www.apple.com/in/music/',
+    feature:
+      'Vertical and horizontal tree orientation options for visualization view.',
   },
   {
-    logo: CokeLogo,
-    link: 'https://coca-cola.com',
+    feature: 'See data requests in highlighted components on click.',
   },
   {
-    logo: NodeLogo,
-    link: 'https://nodejs.org',
-  },
-  {
-    logo: NikeLogo,
-    link: 'https://nike.com',
-  },
-  {
-    logo: InstagramLogo,
-    link: 'https://instagram.com',
+    feature:
+      'Toggle between visualization and table view of data requests in components.',
   },
 ];
 
@@ -60,12 +50,18 @@ const UsedBy = () => (
       <Section id="brands" accent>
         <StyledContainer>
           <div>
-            <h1>Features</h1>
+            <h1 align="center">Features</h1>
             <LogoGrid>
-              {LOGOS.map(({ logo, link }) => (
-                <ExternalLink key={link} href={link}>
-                  {logo()}
-                </ExternalLink>
+              {LOGOS.map(({ feature, link }) => (
+                <div
+                  style={{
+                    border: 'lightgray solid 0.5px',
+                    borderRadius: '10px',
+                    padding: '50px 30px 10vh 50px',
+                  }}
+                >
+                  {feature}
+                </div>
               ))}
             </LogoGrid>
           </div>

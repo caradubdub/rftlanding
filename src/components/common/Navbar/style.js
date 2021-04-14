@@ -4,7 +4,7 @@ import { Container } from '@components/global';
 
 export const Nav = styled.nav`
   padding: 16px 0;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.9);
   position: fixed;
   width: 100%;
   top: 0;

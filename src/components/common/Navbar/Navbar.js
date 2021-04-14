@@ -15,7 +15,7 @@ import {
 
 import { ReactComponent as MenuIcon } from '@static/icons/menu.svg';
 import GithubIcon from '@static/icons/github.svg';
-import InstagramIcon from '@static/icons/instagram.svg';
+import LinkedInIcon from '@static/icons/linkedin.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 import ExternalLink from '@common/ExternalLink';
 
@@ -28,8 +28,8 @@ const SOCIAL = [
     link: 'https://github.com/ajayns/gatsby-absurd',
   },
   {
-    icon: InstagramIcon,
-    name: '',
+    icon: LinkedInIcon,
+    name: 'Follow',
     link: 'https://instagram.com/ajay_ns',
   },
   // {
@@ -78,8 +78,8 @@ class Navbar extends Component {
                   alignItems: 'flex-end',
                   backgroundColor: '#7bc19c',
                   borderRadius: '20px',
-                  padding: '12px 20px 8px 20px',
-                  marginLeft: '5px',
+                  padding: `7px ${name.length + 7}px 7px ${name.length}px`,
+                  marginLeft: '0.75em',
                   ':hover': { backgroundColor: '#BCDBCA' },
                 }}
               >
