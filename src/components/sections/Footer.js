@@ -42,17 +42,13 @@ const Footer = () => (
     `}
     render={data => (
       <React.Fragment>
-        <Art>
-          <Img
-            fluid={data.art_pot.childImageSharp.fluid}
-            style={{ width: 480, maxWidth: '100%', marginBottom: -16 }}
-          />
-        </Art>
         <FooterWrapper>
           <StyledContainer>
             <Copyright>
-              <div>Made with Gatsby using the Absurd design</div>
-              <span>
+              <div style={{ fontSize: '12px' }}>
+                Made with Gatsby using the Absurd design
+              </div>
+              <span style={{ fontSize: '12px' }}>
                 Illustrations by
                 {` `}
                 <ExternalLink href="https://twitter.com/diana_valeanu">
@@ -60,13 +56,6 @@ const Footer = () => (
                 </ExternalLink>
               </span>
             </Copyright>
-            <SocialIcons>
-              {SOCIAL.map(({ icon, link }) => (
-                <ExternalLink key={link} href={link}>
-                  <img src={icon} alt="link" />
-                </ExternalLink>
-              ))}
-            </SocialIcons>
           </StyledContainer>
         </FooterWrapper>
       </React.Fragment>

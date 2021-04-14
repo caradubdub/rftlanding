@@ -19,18 +19,18 @@ import LinkedInIcon from '@static/icons/linkedin.svg';
 import TwitterIcon from '@static/icons/twitter.svg';
 import ExternalLink from '@common/ExternalLink';
 
-const NAV_ITEMS = ['About', 'Team', 'FAQ'];
+const NAV_ITEMS = ['About', 'Features', 'Team', 'FAQ'];
 
 const SOCIAL = [
   {
     icon: GithubIcon,
     name: 'Star',
-    link: 'https://github.com/ajayns/gatsby-absurd',
+    link: 'https://github.com/oslabs-beta/react-fetch-tree',
   },
   {
     icon: LinkedInIcon,
     name: 'Follow',
-    link: 'https://instagram.com/ajay_ns',
+    link: 'https://linkedin.com',
   },
   // {
   //   icon: TwitterIcon,

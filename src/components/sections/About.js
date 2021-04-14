@@ -50,14 +50,12 @@ const About = () => (
             <div>
               <h2>Identify potential waterfalls and prevent them early</h2>
               <p>
-                Concurrent mode are a collection of new features in React that
-                allow rendering to be interruptible instead of blocking. React's
-                Suspense component would allow a user to declaratively wait for
-                requested data React Fetch Tree maps components in your app that
-                are requesting data. Instead of waiting to generate pages when
-                requested, pre-build pages and lift them into a global cloud of
-                servers — ready to be delivered instantly to your users wherever
-                they are.
+                Too many data requests mean slow loading sites and suboptimal
+                performance.
+                <br />
+                <br />
+                Seeing where your data requests are happening is the first step
+                to streamlining requests and speeding up loading.
               </p>
             </div>
             <Art>
@@ -71,9 +69,8 @@ const About = () => (
             <div>
               <h2>Visualize your React app structure</h2>
               <p>
-                Enjoy the power of the latest web technologies – React.js ,
-                Webpack , modern JavaScript and CSS and more — all set up and
-                waiting for you to start building.
+                Get a clear view on the component tree and your app side-by-side
+                in the browser with the React Tree Chrome Extension.
               </p>
             </div>
           </Grid>
@@ -81,11 +78,14 @@ const About = () => (
             <div>
               <h2>Easily see where data requests are within your components</h2>
               <p>
-                Waste no more time on tooling and performance. Focus on the the
-                site you want to build and nothing more.
+                Components that contain data requests are clearly highlighted in
+                the component tree visualization so you can see how it all fits
+                together at a glance during development.
                 <br />
                 <br />
-                Gatsby is fast in every way that matters.
+                <br />
+                Here's to creating faster, more performant React applications
+                the easy way.
               </p>
             </div>
             <Art>
