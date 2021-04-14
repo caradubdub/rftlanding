@@ -7,58 +7,55 @@ import ExternalLink from '@common/ExternalLink';
 
 const FAQS = [
   {
-    title: 'What tech does Gatsby use?',
+    title: 'What is React Fetch Tree?',
     content: () => (
       <>
-        Enjoy the power of the latest web technologies – React.js , Webpack ,
-        modern JavaScript and CSS and more — all set up and waiting for you to
-        start building
+        React Fetch Tree is a tool that helps developers pinpoint where data
+        requests are happening in their apps. This can allow developers to
+        eliminate or consolidate unnecessary data fetching, and avoid
+        "waterfalls".
       </>
     ),
   },
   {
-    title: 'Where can you source data from?',
+    title: 'What is a waterfall?',
     content: () => (
       <>
-        Gatsby’s rich data plugin ecosystem lets you build sites with the data
-        you want — from one or many sources: Pull data from headless CMSs, SaaS
-        services, APIs, databases, your file system, and more directly into your
-        pages using GraphQL.
+        The React team have defined a waterfall as 'an unintentional sequence
+        that should have been parallelized'. In regards to data fetching, it
+        refers to the case where a data request in a child component depends on
+        a data request in a parent component. Because the data must flow through
+        both components before they are correctly rendered, the rendering
+        process is slowed and performance is diminished. React Fetch Tree can
+        help you identify the location of data requests in your app and prevent
+        waterfalls.
       </>
     ),
   },
   {
-    title: 'How do I scale Gatsby sites?',
+    title: 'How does React Fetch Tree help prevent waterfalls?',
     content: () => (
       <>
-        Gatsby.js is Internet Scale. Forget complicated deploys with databases
-        and servers and their expensive, time-consuming setup costs,
-        maintenance, and scaling fears. Gatsby.js builds your site as “static”
-        files which can be deployed easily on dozens of services.
+        React Fetch Tree provides a visualization of the component tree which
+        shows the layout and hierarchy of your React app with all it's
+        components. Components that contain data requests are highlighted within
+        the visualization, so you can easily see the relationship between
+        components that contain data requests. Nodes containing data fetches
+        that are highlighted can be clicked on to reveal details about the data
+        requests they contain.
       </>
     ),
   },
   {
-    title: 'How does do I future-proof my website?',
+    title: 'How can React Fetch Tree be used?',
     content: () => (
       <>
-        Do not build a website with last decade’s tech. The future of the web is
-        mobile, JavaScript and APIs—the{` `}
-        <ExternalLink href="https://jamstack.org/">JAMstack</ExternalLink>.
-        Every website is a web app and every web app is a website. Gatsby.js is
-        the universal JavaScript framework you’ve been waiting for.
-      </>
-    ),
-  },
-  {
-    title: 'What exactly does Gatsby build?',
-    content: () => (
-      <>
-        Gatsby.js is a static PWA (Progressive Web App) generator. You get code
-        and data splitting out-of-the-box. Gatsby loads only the critical HTML,
-        CSS, data, and JavaScript so your site loads as fast as possible. Once
-        loaded, Gatsby prefetches resources for other pages so clicking around
-        the site feels incredibly fast.
+        React Fetch Tree can be used to streamline your application by removing
+        or consolidating data requests when waterfalls can be identified or to
+        refactor your request process. With the release of React Concurrent Mode
+        and Suspense, React Fetch Tree can be used to identify areas in your app
+        where the implementation of Suspense for Data Fetching will be most
+        advantageous.
       </>
     ),
   },

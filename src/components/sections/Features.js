@@ -47,7 +47,7 @@ const UsedBy = () => (
       }
     `}
     render={data => (
-      <Section id="brands" accent>
+      <Section id="features" accent>
         <StyledContainer>
           <div>
             <h1 align="center">Features</h1>
@@ -60,7 +60,7 @@ const UsedBy = () => (
                     padding: '50px 30px 10vh 50px',
                   }}
                 >
-                  {feature}
+                  <p>{feature}</p>
                 </div>
               ))}
             </LogoGrid>
