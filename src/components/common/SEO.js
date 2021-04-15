@@ -2,7 +2,7 @@ import React from 'react';
 import Helmet from 'react-helmet';
 
 const SEO_DATA = {
-  description: 'Landing page for React Fetch Tree',
+  description: 'A dev tool to visualize data requests in React apps',
   title: 'React Fetch Tree',
   url: 'https://github.com/oslabs-beta/react-fetch-tree',
   author: 'React Fetch Tree team',

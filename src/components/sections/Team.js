@@ -89,11 +89,17 @@ const Team = () => (
 
               return (
                 <div key={name}>
-                  <ExternalLink key={github} href={github}>
+                  <ExternalLink
+                    style={{
+                      textDecoration: `underline #211E26`,
+                    }}
+                    key={github}
+                    href={github}
+                  >
                     <Img fluid={img.childImageSharp.fluid} alt={name} />
                     <Title>{name}</Title>
-                    <Subtitle>{role}</Subtitle>
                   </ExternalLink>
+                  <Subtitle>{role}</Subtitle>
                 </div>
               );
             })}
