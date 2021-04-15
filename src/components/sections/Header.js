@@ -91,7 +91,7 @@ const Grid = styled.div`
 
     > ${Art} {
       order: -1;
-      margin-top: -60px;
+      margin: -60px 0 0 -20px;
     }
   }
 `;
