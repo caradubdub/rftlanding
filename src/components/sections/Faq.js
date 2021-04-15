@@ -4,7 +4,6 @@ import { Section, Container } from '@components/global';
 
 import FaqItem from '@common/FaqItem';
 
-
 const FAQS = [
   {
     title: 'What is React Fetch Tree?',
@@ -37,12 +36,11 @@ const FAQS = [
     content: () => (
       <>
         React Fetch Tree provides a visualization of the component tree which
-        shows the layout and hierarchy of your React app with all it's
+        shows the layout and hierarchy of your React app with all its
         components. Components that contain data requests are highlighted within
         the visualization, so you can easily see the relationship between
-        components that contain data requests. Nodes containing data fetches
-        that are highlighted can be clicked on to reveal details about the data
-        requests they contain.
+        components that contain data requests. Highlighted nodes can be clicked
+        on to reveal details about the data requests they contain.
       </>
     ),
   },
