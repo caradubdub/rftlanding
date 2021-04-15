@@ -30,9 +30,8 @@ const SOCIAL = [
   {
     icon: LinkedInIcon,
     name: 'Follow',
-    link: 'https://linkedin.com',
+    link: 'https://www.linkedin.com/company/react-fetch-tree/',
   },
-
 ];
 
 class Navbar extends Component {

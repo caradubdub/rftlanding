@@ -86,16 +86,17 @@ const Grid = styled.div`
 
   @media (max-width: ${props => props.theme.screen.md}) {
     grid-template-columns: 1fr;
-    grid-gap: 0px;
+    grid-gap: 80px;
 
     > ${Art} {
       order: -1;
+      margin-top: -80px;
     }
   }
 `;
 
 const Text = styled.div`
-  justify-self: center;
+  justify-self: flex-end;
 
   @media (max-width: ${props => props.theme.screen.md}) {
     justify-self: center;

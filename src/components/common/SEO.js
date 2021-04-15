@@ -6,9 +6,21 @@ const SEO_DATA = {
   title: 'React Fetch Tree',
   url: 'https://github.com/oslabs-beta/react-fetch-tree',
   author: 'React Fetch Tree team',
-  keywords: ['react', 'react fiber', 'parser', 'react suspense', 'waterfall', 'concurrent mode'],
+  keywords: [
+    'react',
+    'react fiber',
+    'parser',
+    'react suspense',
+    'waterfall',
+    'concurrent mode',
+    'trevor carr',
+    'cara dibdin',
+    'james ferrell',
+    'chris lung',
+    'anika mustafiz',
+  ],
   img: './images/react-fetch-tree.png',
-  linkedInId: ''
+  linkedInId: '',
 };
 
 const SEO = () => {

@@ -79,8 +79,8 @@ const About = () => (
               <h2>Easily see where data requests are within your components</h2>
               <p>
                 Components that contain data requests are clearly highlighted in
-                the component tree visualization so you can see how it all fits
-                together at a glance during development.
+                the tree visualization and the component store so you can see
+                how it all fits together at a glance during development.
                 <br />
                 <br />
                 <br />

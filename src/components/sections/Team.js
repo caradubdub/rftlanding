@@ -65,9 +65,9 @@ const Team = () => (
             }
           }
         }
-        art_ideas: file(
+        art_ideas1: file(
           sourceInstanceName: { eq: "art" }
-          name: { eq: "ideas" }
+          name: { eq: "ideas1" }
         ) {
           childImageSharp {
             fluid(maxWidth: 1600) {
@@ -99,10 +99,10 @@ const Team = () => (
             })}
           </TeamGrid>
           <Art>
-            <Img fluid={data.art_ideas.childImageSharp.fluid} />
+            <Img fluid={data.art_ideas1.childImageSharp.fluid} />
           </Art>
           <ArtMobile>
-            <Img fluid={data.art_ideas.childImageSharp.fluid} />
+            <Img fluid={data.art_ideas1.childImageSharp.fluid} />
           </ArtMobile>
         </Container>
       </Section>
