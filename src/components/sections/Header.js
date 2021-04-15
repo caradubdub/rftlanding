@@ -90,7 +90,7 @@ const Grid = styled.div`
 
     > ${Art} {
       order: -1;
-      margin-top: -80px;
+      margin-top: -60px;
     }
   }
 `;
