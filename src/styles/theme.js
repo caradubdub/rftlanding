@@ -25,7 +25,7 @@ const theme = {
   screen: {
     xs: '450px',
     sm: '575px',
-    md: '890px',
+    md: '765px',
     lg: '1199px',
   },
 };
