@@ -62,7 +62,7 @@ const About = () => (
               <Img fluid={data.art_fast.childImageSharp.fluid} />
             </Art>
           </Grid>
-          <Grid inverse>
+          <Grid inverse style={{ marginTop: '100px' }}>
             <Art>
               <Img fluid={data.art_learn.childImageSharp.fluid} />
             </Art>
@@ -74,7 +74,7 @@ const About = () => (
               </p>
             </div>
           </Grid>
-          <Grid>
+          <Grid style={{ marginTop: '100px' }}>
             <div>
               <h2>Easily see where data requests are within your components</h2>
               <p>
